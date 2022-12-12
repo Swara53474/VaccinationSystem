@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AfterLoginProfile">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="1.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@bg1000x600.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff80" height="393.0" layoutX="11.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="982.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="26.0" layoutY="94.0" text="Name:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="327.0" text="Contact No:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="279.0" text="Aadhaar No.:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pnameLabel" layoutX="160.0" layoutY="100.0" prefHeight="20.0" prefWidth="200.0" text="yo" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="paadhaarLabel" layoutX="160.0" layoutY="260.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="pcontactLabel" layoutX="160.0" layoutY="300.0" prefHeight="20.0" prefWidth="200.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcome" layoutX="45.0" layoutY="13.0">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="930.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@60817.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="934.0" layoutY="14.0" mnemonicParsing="false" onAction="#ToHomePage" opacity="0.0" prefHeight="60.0" prefWidth="60.0" text="HOME" />
+      <Button fx:id="logout" layoutX="885.0" layoutY="490.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="101.0" text="LOG OUT">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="26.0" layoutY="127.0" text="DOB:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="172.0" text="Age:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="207.0" text="Gender:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="382.0" text="Vaccine:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="426.0" text="Date:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="380.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="478.0" text="Timeslot:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="420.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pdobLabel" layoutX="160.0" layoutY="140.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pageLabel" layoutX="160.0" layoutY="180.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pgenderLabel" layoutX="160.0" layoutY="220.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pvaccineLabel" layoutX="160.0" layoutY="340.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pdateLabel" layoutX="160.0" layoutY="380.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ptimeLabel1" layoutX="160.0" layoutY="420.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="299.0" layoutX="509.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" width="415.0" />
+      <Label layoutX="623.0" layoutY="140.0" text="TAKE YOUR 2nd DOSE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="207.0" text="Vaccine:" AnchorPane.leftAnchor="546.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="546.0" layoutY="260.0" text="Date:" AnchorPane.leftAnchor="546.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="546.0" layoutY="314.0" text="Timeslot:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="u2nd" layoutX="644.0" layoutY="368.0" mnemonicParsing="false" onAction="#book2nd" text="CONFIRM BOOKING" />
+      <ComboBox fx:id="utime" layoutX="673.0" layoutY="315.0" prefHeight="25.0" prefWidth="180.0" />
+      <DatePicker fx:id="udate" layoutX="676.0" layoutY="264.0" />
+      <Label fx:id="uvaccineLabel" layoutX="669.0" layoutY="207.0" prefHeight="20.0" prefWidth="200.0" text="yo">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

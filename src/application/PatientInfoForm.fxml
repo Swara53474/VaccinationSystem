@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: fec89a;" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Label layoutX="61.0" layoutY="84.0" text="Name:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="125.0" text="DOB:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="190.0" text="Age:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="250.0" text="Gender:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="328.0" text="Aadhaar:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="330.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="380.0" text="Contact No.:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="380.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="180.0" layoutY="85.0" prefHeight="25.0" prefWidth="267.0" AnchorPane.topAnchor="80.0" />
+      <TextField layoutX="180.0" layoutY="191.0" prefHeight="25.0" prefWidth="60.0" AnchorPane.topAnchor="180.0" />
+      <TextField layoutX="180.0" layoutY="321.0" prefHeight="25.0" prefWidth="267.0" AnchorPane.topAnchor="330.0" />
+      <TextField layoutX="180.0" layoutY="379.0" prefHeight="25.0" prefWidth="267.0" AnchorPane.topAnchor="380.0" />
+      <Label layoutX="254.0" layoutY="14.0" text="Vaccination Registration Form">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="79.0" text="Does the applicant have any medical history?" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="79.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="180.0" text="If yes please mention:" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+     
+      <RadioButton layoutX="180.0" layoutY="235.0" mnemonicParsing="false" text="Male" AnchorPane.topAnchor="230.0">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <RadioButton layoutX="180.0" layoutY="264.0" mnemonicParsing="false" text="Female" AnchorPane.topAnchor="255.0">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <RadioButton layoutX="180.0" layoutY="292.0" mnemonicParsing="false" text="Other" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <RadioButton layoutX="499.0" layoutY="107.0" mnemonicParsing="false" text="Yes" AnchorPane.leftAnchor="499.0" AnchorPane.topAnchor="107.0">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <RadioButton layoutX="500.0" layoutY="133.0" mnemonicParsing="false" text="No" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="133.0">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <TextArea layoutX="493.0" layoutY="216.0" prefHeight="100.0" prefWidth="440.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="60.0" />
+      <Button layoutX="400.0" layoutY="489.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="RESET" />
+      <Button layoutX="400.0" layoutY="526.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="CONFIRM BOOKING" />
+      <DatePicker layoutX="180.0" layoutY="131.0" prefHeight="25.0" prefWidth="267.0" />
+      <Label layoutX="135.0" layoutY="559.0" text="You have been registered successfully! Your password is your registered CONTACT NUMBER. ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      
+   </children>
