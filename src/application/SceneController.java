@@ -58,6 +58,62 @@ public void FormFX(ActionEvent event) throws IOException{
 	stage.setScene(scene);
 	stage.show();
 }
+public void switchToHomePage(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchToLogInForVaccination(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("LogInForVaccination.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchToPatientInfoForm(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("PatientInfoForm.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchToAdminPage(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("AdminPage.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchToAdminLogIn(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("AdminLogIn.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchForChild(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("ForChild.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchToFAQs(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("FAQs.fxml"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
+public void switchToCom(ActionEvent event) throws IOException {
+Parent root = FXMLLoader.load(getClass().getResource("Com.java"));
+stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+scene = new Scene(root);
+stage.setScene(scene);
+stage.show();
+}
 Connection con;
 PreparedStatement pst;
 @FXML
@@ -140,34 +196,7 @@ public void Profile(ActionEvent event) throws IOException{
 	}
 }
 
-public void switchToHomePage(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
-public void switchToLogInForVaccination(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("LogInForVaccination.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
-public void switchToPatientInfoForm(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("PatientInfoForm.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
-public void switchToAdminPage(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("AdminPage.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
+
 @FXML
 private PasswordField aptext;
 
@@ -213,34 +242,7 @@ public void switchToAdmiModified(ActionEvent event) throws IOException {
 		}
 
 }
-public void switchToAdminLogIn(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("AdminLogIn.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
-public void switchForChild(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("ForChild.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
-public void switchToFAQs(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("FAQs.fxml"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
-public void switchToCom(ActionEvent event) throws IOException {
-Parent root = FXMLLoader.load(getClass().getResource("Com.java"));
-stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-scene = new Scene(root);
-stage.setScene(scene);
-stage.show();
-}
+
 
 @FXML
 private Label InfoLabel;
@@ -402,7 +404,3 @@ public void SpecificInfo(ActionEvent event) throws IOException{
 	}
 }
 }
-
-	
-
-
